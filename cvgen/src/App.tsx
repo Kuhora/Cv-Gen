@@ -1,12 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Form from './components/Form';
+import Preview from './components/Preview';
+import PdfGen from './components/PdfGen';
 
 function App() {
-  return (
-    <div>
-      <h1>Gerador de Currículos</h1>
-      <Form />
-    </div>
-  );
+    return (
+        <Router>
+            <div className="app">
+                <h1>CV Generator</h1>
+                <Routes>
+                    <Route path="/" element={<Form />} />
+                    <Route path="/preview" element={<Preview />} />
+                    <Route path="/pdf" element={<PdfGen />} />
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

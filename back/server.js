@@ -1,13 +1,22 @@
-const express = require("express");
-const cors = require("cors");
+const express = require('express');
 const app = express();
+const cors = require('cors');
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("Server running...");
+let resumes = [];
+
+app.post('/api/save', (req, res) => {
+    const data = req.body;
+    resumes.push(data);
+    res.send({ success: true });
 });
 
-const PORT = 4444;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get('/api/resumes', (req, res) => {
+    res.json(resumes);
+});
+
+app.listen(6969, () => {
+    console.log('Server running on port 6969');
+});
