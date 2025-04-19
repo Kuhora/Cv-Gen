@@ -32,7 +32,6 @@ The app is designed to be simple and intuitive, making it easy for anyone to cre
  
   - ### 🖥️ Layout
   - ![Screenshot_1](https://github.com/user-attachments/assets/7e56f748-9004-48e0-833e-5352938632d7)
-  - [Click <a href="[https://your-live-link.com](https://kuhora.github.io/Cv-Gen/)" rel="nofollow">HERE</a> to experience the app live.](https://kuhora.github.io/Cv-Gen/)
 
  ### ☕ Contact Me ###
 
